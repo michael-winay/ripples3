@@ -24,6 +24,29 @@
 		<link rel="apple-touch-icon" sizes="192x192" href="apple-touch-icon.png">
 
 		<link rel="stylesheet" href="css/ripples3.package.min.css">
+		<style>
+			#cactus-tools {
+				position: fixed;
+				top: auto;
+				right: auto;
+				bottom: max(12px, env(safe-area-inset-bottom));
+				left: max(12px, env(safe-area-inset-left));
+				z-index: 10;
+				display: flex;
+				align-items: center;
+				box-sizing: border-box;
+				min-height: 44px;
+				padding: 0 14px;
+				border: 1px solid currentColor;
+				border-radius: var(--rad);
+				color: var(--col);
+				background: var(--blck);
+				font-size: 16px;
+				text-decoration: none;
+			}
+			#cactus-tools:hover { text-decoration: underline; }
+			#cactus-tools:focus-visible { outline: 2px solid var(--hil); outline-offset: 4px; }
+		</style>
 		
 		<script src="js/ripples3.package.release.min.js"></script>
 		
@@ -32,6 +55,7 @@
 	<body>
 
 		<a href="https://github.com/nicopowa/ripples3"><div id="github"></div></a>
+		<a id="cactus-tools" href="https://tools.cactuslabs.co/image/compress/">Image compressor</a>
 		<div id="fps"></div>
 
 	</body>
